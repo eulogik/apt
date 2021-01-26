@@ -15,8 +15,21 @@ const Features = ()=>{
     const classes = useStyles();
     return(
         <div className={classes.root}>
+          <h1>
+        
+        <span style={{color:'#376EE6'}}>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+        &nbsp; FEATURES
+        </span>
+      </h1>
+      <br/>
+      <br/>
             
             <Grid container spacing={5} style={{width:'90%', marginLeft:'2%'}}>
+              
             <Grid item xs={6} sm={4}>
           <Grid><img src={logo}  alt='logo' style={{float:'left',width:'50%', marginLeft:'10%',height:'70px'}}/>
           <h3 style={{marginRight:'10%', color:'#CF1322'}}>Timley</h3>
