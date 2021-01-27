@@ -10,6 +10,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import './Features.css'
+import { NavLink } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -102,9 +103,10 @@ const Features = ()=>{
       </ListItem>
         </Grid>
         </Grid>
+        <NavLink to='/register'>
         <Button type='submit' variant="contained" color="primary" style={{width:'40%'}}>
   REGISTER NOW
-</Button>
+</Button></NavLink>
         </div>
     )
 }

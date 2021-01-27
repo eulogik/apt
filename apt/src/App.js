@@ -7,18 +7,23 @@ import Footer from './Footer'
 import Foundation from './Foundation'
 import Usp from './Usp'
 import Topperspeak from './Topperspeak'
+import Register from './Register'
 import Onlinesupport from './Onlinesupport/Onlinesupport'
+import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="App" >
+     
+      <BrowserRouter>
       <Header/>
-      <Form/>
-      <Features/>
-      <Foundation/>
-      <Onlinesupport/>
-      <Usp/>
-      <Topperspeak/>
+      
+      <Switch>
+        <Route exact path="/" component={Form} />
+        <Route exact path="/register" component={Register} />
+        
+      </Switch>
+    </BrowserRouter>
       <Footer/>
 
       

@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import logo from './download.JPEG'
+import {NavLink} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -66,9 +67,10 @@ export default function Foundation() {
         <br/>
         <br/>
         <br/>
+        <NavLink to='/register'>
         <Button type='submit' variant="contained" color="primary" style={{width:'40%'}}>
   REGISTER NOW
-</Button>
+</Button></NavLink>
       <div >
           <br/>
           <br/>
@@ -124,9 +126,10 @@ export default function Foundation() {
         <br/>
         <br/>
         <br/>
+        <NavLink to='/register'>
         <Button type='submit' variant="contained" color="primary" style={{width:'40%'}}>
   REGISTER NOW
-</Button>
+</Button></NavLink>
     </div>
   );
 }

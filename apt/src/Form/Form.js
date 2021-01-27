@@ -5,12 +5,20 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import logo from '../download.JPEG'
+import Features from '../Features/Features'
+
+import Foundation from '../Foundation'
+import Usp from '../Usp'
+import Topperspeak from '../Topperspeak'
+
+import Onlinesupport from '../Onlinesupport/Onlinesupport'
 
 
 import './Form.css'
 
 
 import axios from 'axios';
+import { NavLink } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -164,7 +172,12 @@ console.log()
       
 
     </div>
-  
+    <Features/>
+      <Foundation/>
+      <Onlinesupport/>
+      <Usp/>
+      <Topperspeak/>
+     
     
     
     </div>
