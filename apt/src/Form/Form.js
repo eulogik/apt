@@ -105,7 +105,7 @@ console.log()
 
         
       <Button type='submit' variant="contained" color="primary" style={{width:'50%'}}>
-  Primary
+  SUBMIT
 </Button>
       </form>
          

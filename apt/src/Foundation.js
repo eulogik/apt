@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
 import logo from './download.JPEG'
 
 const useStyles = makeStyles((theme) => ({
@@ -61,6 +62,13 @@ export default function Foundation() {
           <img src={logo} style={{width:'60%'}}/>
         </Grid>
         </Grid>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <Button type='submit' variant="contained" color="primary" style={{width:'40%'}}>
+  REGISTER NOW
+</Button>
       <div >
           <br/>
           <br/>
@@ -112,6 +120,13 @@ export default function Foundation() {
           <img src={logo} style={{width:'60%'}}/>
         </Grid>
         </Grid>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <Button type='submit' variant="contained" color="primary" style={{width:'40%'}}>
+  REGISTER NOW
+</Button>
     </div>
   );
 }

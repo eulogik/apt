@@ -51,6 +51,13 @@ const Usp=()=>{
    
   </Grid>
   </Grid>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <Button type='submit' variant="contained" color="primary" style={{width:'40%'}}>
+  REGISTER NOW
+</Button>
   </div>
   )
 }

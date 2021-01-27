@@ -7,7 +7,7 @@ import Footer from './Footer'
 import Foundation from './Foundation'
 import Usp from './Usp'
 import Topperspeak from './Topperspeak'
-import Onlinesupport from './Onlinesupport'
+import Onlinesupport from './Onlinesupport/Onlinesupport'
 
 function App() {
   return (

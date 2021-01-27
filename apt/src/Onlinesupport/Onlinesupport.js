@@ -2,14 +2,13 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import logo from '../download.JPEG';
 import Button from '@material-ui/core/Button';
+
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
-import './Features.css'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
  
 }));
 
-const Features = ()=>{
+const Onlinesupport = ()=>{
     const classes = useStyles();
     return(
         <div className={classes.root}>
@@ -29,7 +28,7 @@ const Features = ()=>{
           <br/>
           <br/>
           <br/>
-        &nbsp; FEATURES
+        &nbsp; ONLINE SUPPORT
         </span>
       </h1>
       <br/>
@@ -45,7 +44,7 @@ const Features = ()=>{
             <img alt='cd'/>
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="TIMELY" secondary="Course Comletion" />
+        <ListItemText primary="ONLINE" secondary="Video Lectures" />
       </ListItem>
          
        
@@ -58,7 +57,7 @@ const Features = ()=>{
             <img alt='cd'/>
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="24/7" secondary="Doubt Clearing & Faculty support" />
+        <ListItemText primary="RANK TEST" secondary="Series" />
       </ListItem>
         </Grid>
         <Grid item xs={12} sm={4}>
@@ -68,7 +67,7 @@ const Features = ()=>{
             <img alt='cd'/>
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="2 REVISIONS" secondary="and 6 Mock Tests" />
+        <ListItemText primary="FB LIVE" secondary="Doubt Crearing Sessions" />
       </ListItem>
         </Grid>
         <Grid item xs={12} sm={4}>
@@ -78,7 +77,7 @@ const Features = ()=>{
             <img alt='cd'/>
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="DIGITAL LIBRARY" secondary="Facility at all Centres" />
+        <ListItemText primary="UNLIMITED" secondary="Practice Questions" />
       </ListItem>
         </Grid>
         <Grid item xs={12} sm={4}>
@@ -88,7 +87,7 @@ const Features = ()=>{
             <img alt='cd'/>
           </Avatar>
         </ListItemAvatar>
-        <ListItemText  primary="HOSTEL" secondary="Facility" />
+        <ListItemText primary="PERFORMANCE" secondary="Analytics" />
       </ListItem>
         </Grid>
         <Grid item xs={12} sm={4}>
@@ -98,10 +97,14 @@ const Features = ()=>{
             <img alt='cd'/>
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="HI-TECH" secondary="Classrooms with Audio Visual Aids" />
+        <ListItemText primary="SHORT NOTES" secondary="with Examples" />
       </ListItem>
         </Grid>
         </Grid>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <Button type='submit' variant="contained" color="primary" style={{width:'40%'}}>
   REGISTER NOW
 </Button>
@@ -109,4 +112,4 @@ const Features = ()=>{
     )
 }
 
-export default Features;
+export default Onlinesupport;
