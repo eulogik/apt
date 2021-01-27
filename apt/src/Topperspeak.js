@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 
-const Usp=()=>{
+const Topperspeak=()=>{
     const classes = useStyles();
     return(
 <div className={classes.root}>
@@ -66,4 +66,4 @@ const Usp=()=>{
   )
 }
 
-export default Usp;
+export default Topperspeak;
