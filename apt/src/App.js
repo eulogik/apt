@@ -5,6 +5,8 @@ import Form from './Form/Form'
 import Features from './Features'
 import Footer from './Footer'
 import Foundation from './Foundation'
+import Usp from './Usp'
+import Topperspeak from './Topperspeak'
 
 function App() {
   return (
@@ -13,7 +15,10 @@ function App() {
       <Form/>
       <Features/>
       <Foundation/>
+      <Usp/>
+      <Topperspeak/>
       <Footer/>
+
       
         
     </div>
