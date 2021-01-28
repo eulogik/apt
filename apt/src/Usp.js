@@ -6,6 +6,8 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import logo from './download.JPEG'
 import {NavLink} from 'react-router-dom';
+import ScrollUpButton from "react-scroll-up-button"; //Add this line Here
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -56,10 +58,9 @@ const Usp=()=>{
   <br/>
   <br/>
   <br/>
-  <NavLink to='/register'>
-        <Button type='submit' variant="contained" color="primary" style={{width:'40%'}}>
-  REGISTER NOW
-</Button></NavLink>
+  <ScrollUpButton ><Button type='submit' variant="contained" color="primary" style={{width:'40%'}}>
+        REGISTER NOW
+        </Button></ScrollUpButton>
   </div>
   )
 }

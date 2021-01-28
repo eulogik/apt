@@ -10,6 +10,7 @@ import Topperspeak from './Topperspeak'
 import Register from './Register'
 import Onlinesupport from './Onlinesupport/Onlinesupport'
 import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
+import ScrollUpButton from "react-scroll-up-button"; //Add this line Here
 
 function App() {
   return (
@@ -23,8 +24,9 @@ function App() {
         <Route exact path="/register" component={Register} />
         
       </Switch>
-    </BrowserRouter>
       <Footer/>
+    </BrowserRouter>
+     
 
       
         

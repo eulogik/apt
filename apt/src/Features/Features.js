@@ -11,6 +11,8 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import './Features.css'
 import { NavLink } from 'react-router-dom';
+import ScrollUpButton from "react-scroll-up-button"; //Add this line Here
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -103,10 +105,12 @@ const Features = ()=>{
       </ListItem>
         </Grid>
         </Grid>
-        <NavLink to='/register'>
-        <Button type='submit' variant="contained" color="primary" style={{width:'40%'}}>
-  REGISTER NOW
-</Button></NavLink>
+        
+        
+<ScrollUpButton ><Button type='submit' variant="contained" color="primary" style={{width:'40%'}}>
+        REGISTER NOW
+        </Button></ScrollUpButton>
+
         </div>
     )
 }

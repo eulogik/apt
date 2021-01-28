@@ -70,8 +70,19 @@ console.log()
    console.log(register);
 
    axios.post('http://localhost:5000/register/add', register)
-   .then(res => console.log(res.data));
-    
+   .then(res => alert(res.data));
+
+
+     setForm({
+      fullname:'',
+      country:'',
+      contact_number:'',
+      email_id:'',
+      city:'',
+  
+  
+ 
+})
 
  }
   return (
@@ -105,10 +116,13 @@ console.log()
           <form onSubmit={onSubmit}>
           <h2 style={{textAlign:'center',color:'#376EE6'}}>Free Registration</h2>
 
-      <TextField style={{width:'50%'}} id="standard-basic" label="Fullname" required value={form.fullname} name='fullname' onChange={onChange} /><br/>
+      <TextField style={{width:'50%'}} id="standard-basic" label="Fullname"  inputProps={{pattern:"[A-za-z]"}} required value={form.fullname} name='fullname' onChange={onChange} /><br/>
+      
       <TextField style={{width:'50%'}} id="standard-basic" label="Country" required value={form.country} name='country' onChange={onChange} /><br/>
-      <TextField style={{width:'50%'}} id="standard-basic" label="Contact number" required value={form.contact_number} name='contact_number' onChange={onChange} /><br/>
-      <TextField style={{width:'50%'}} id="standard-basic" label="Email Id" required value={form.email_id} name='email_id' onChange={onChange} /><br/>
+      <TextField style={{width:'50%'}} id="standard-basic" type='number'  inputProps={{ minLength: 10, maxLength:10 }} label="Contact number" required value={form.contact_number} name='contact_number' onChange={onChange} /><br/>
+      <TextField style={{width:'50%'}} id="email"  inputProps={{pattern:"[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*"}}
+ label="Email Id" required='enter' 
+ value={form.email_id} name='email_id' onChange={onChange} /><br/>
       <TextField style={{width:'50%'}} id="standard-basic" label="City" required value={form.city} name='city' onChange={onChange} /><br/><br/>
 
         

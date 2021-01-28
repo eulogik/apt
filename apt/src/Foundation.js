@@ -5,6 +5,8 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import logo from './download.JPEG'
 import {NavLink} from 'react-router-dom';
+import ScrollUpButton from "react-scroll-up-button"; //Add this line Here
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -67,10 +69,9 @@ export default function Foundation() {
         <br/>
         <br/>
         <br/>
-        <NavLink to='/register'>
-        <Button type='submit' variant="contained" color="primary" style={{width:'40%'}}>
-  REGISTER NOW
-</Button></NavLink>
+        <ScrollUpButton ><Button type='submit' variant="contained" color="primary" style={{width:'40%'}}>
+        REGISTER NOW
+        </Button></ScrollUpButton>
       <div >
           <br/>
           <br/>
@@ -126,10 +127,9 @@ export default function Foundation() {
         <br/>
         <br/>
         <br/>
-        <NavLink to='/register'>
-        <Button type='submit' variant="contained" color="primary" style={{width:'40%'}}>
-  REGISTER NOW
-</Button></NavLink>
+        <ScrollUpButton ><Button type='submit' variant="contained" color="primary" style={{width:'40%'}}>
+        REGISTER NOW
+        </Button></ScrollUpButton>
     </div>
   );
 }
